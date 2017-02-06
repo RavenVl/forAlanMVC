@@ -1,0 +1,30 @@
+﻿@model alan_mvc.ocenkas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ocenkas</legend>
+
+    <div class="display-label">name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">myis</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.myis)
+    </div>
+
+    <div class="display-label">id1</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id1)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

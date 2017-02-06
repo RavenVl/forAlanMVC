@@ -1,0 +1,33 @@
+﻿@model alan_mvc.ocenkas
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>ocenkas</legend>
+
+    <div class="display-label">name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">myis</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.myis)
+    </div>
+
+    <div class="display-label">id1</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id1)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

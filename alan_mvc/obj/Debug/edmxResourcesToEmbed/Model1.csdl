@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Database1Entities3" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="consts" EntityType="Database1Model.consts" />
+    <EntitySet Name="nds" EntityType="Database1Model.nds" />
+    <EntitySet Name="ocenkas" EntityType="Database1Model.ocenkas" />
+  </EntityContainer>
+  <EntityType Name="consts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="val" Type="Int16" />
+  </EntityType>
+  <EntityType Name="nds">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="c1" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c2" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c3" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c4" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c5" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c6" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c7" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c8" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="c9" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="myis" Type="Boolean" />
+    <Property Name="time" Type="Int32" />
+    <Property Name="id" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ocenkas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="myis" Type="Boolean" />
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="id1" Type="Int16" />
+  </EntityType>
+</Schema>

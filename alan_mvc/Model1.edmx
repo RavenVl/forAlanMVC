@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище Database1Model" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Хранилище Database1ModelContainer">
+          <EntitySet Name="consts" EntityType="Хранилище Database1Model.consts" store:Type="Tables" />
+          <EntitySet Name="nds" EntityType="Хранилище Database1Model.nds" store:Type="Tables" />
+          <EntitySet Name="ocenkas" EntityType="Хранилище Database1Model.ocenkas" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="consts">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="smallint" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="val" Type="smallint" />
+        </EntityType>
+        <EntityType Name="nds">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="c1" Type="numeric" />
+          <Property Name="c2" Type="numeric" />
+          <Property Name="c3" Type="numeric" />
+          <Property Name="c4" Type="numeric" />
+          <Property Name="c5" Type="numeric" />
+          <Property Name="c6" Type="numeric" />
+          <Property Name="c7" Type="numeric" />
+          <Property Name="c8" Type="numeric" />
+          <Property Name="c9" Type="numeric" />
+          <Property Name="myis" Type="bit" />
+          <Property Name="time" Type="int" />
+          <Property Name="id" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ocenkas">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="myis" Type="bit" />
+          <Property Name="id" Type="smallint" Nullable="false" />
+          <Property Name="id1" Type="smallint" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database1Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Database1Entities3" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="consts" EntityType="Database1Model.consts" />
+          <EntitySet Name="nds" EntityType="Database1Model.nds" />
+          <EntitySet Name="ocenkas" EntityType="Database1Model.ocenkas" />
+        </EntityContainer>
+        <EntityType Name="consts">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int16" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="val" Type="Int16" />
+        </EntityType>
+        <EntityType Name="nds">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="c1" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c2" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c3" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c4" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c5" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c6" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c7" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c8" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="c9" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="myis" Type="Boolean" />
+          <Property Name="time" Type="Int32" />
+          <Property Name="id" Type="Int16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ocenkas">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="myis" Type="Boolean" />
+          <Property Name="id" Type="Int16" Nullable="false" />
+          <Property Name="id1" Type="Int16" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище Database1ModelContainer" CdmEntityContainer="Database1Entities3">
+          <EntitySetMapping Name="consts">
+            <EntityTypeMapping TypeName="Database1Model.consts">
+              <MappingFragment StoreEntitySet="consts">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="val" ColumnName="val" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nds">
+            <EntityTypeMapping TypeName="Database1Model.nds">
+              <MappingFragment StoreEntitySet="nds">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="c1" ColumnName="c1" />
+                <ScalarProperty Name="c2" ColumnName="c2" />
+                <ScalarProperty Name="c3" ColumnName="c3" />
+                <ScalarProperty Name="c4" ColumnName="c4" />
+                <ScalarProperty Name="c5" ColumnName="c5" />
+                <ScalarProperty Name="c6" ColumnName="c6" />
+                <ScalarProperty Name="c7" ColumnName="c7" />
+                <ScalarProperty Name="c8" ColumnName="c8" />
+                <ScalarProperty Name="c9" ColumnName="c9" />
+                <ScalarProperty Name="myis" ColumnName="myis" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ocenkas">
+            <EntityTypeMapping TypeName="Database1Model.ocenkas">
+              <MappingFragment StoreEntitySet="ocenkas">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="myis" ColumnName="myis" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id1" ColumnName="id1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Database1Model" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Хранилище Database1ModelContainer">
+    <EntitySet Name="consts" EntityType="Хранилище Database1Model.consts" store:Type="Tables" />
+    <EntitySet Name="nds" EntityType="Хранилище Database1Model.nds" store:Type="Tables" />
+    <EntitySet Name="ocenkas" EntityType="Хранилище Database1Model.ocenkas" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="consts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="val" Type="smallint" />
+  </EntityType>
+  <EntityType Name="nds">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="c1" Type="numeric" />
+    <Property Name="c2" Type="numeric" />
+    <Property Name="c3" Type="numeric" />
+    <Property Name="c4" Type="numeric" />
+    <Property Name="c5" Type="numeric" />
+    <Property Name="c6" Type="numeric" />
+    <Property Name="c7" Type="numeric" />
+    <Property Name="c8" Type="numeric" />
+    <Property Name="c9" Type="numeric" />
+    <Property Name="myis" Type="bit" />
+    <Property Name="time" Type="int" />
+    <Property Name="id" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ocenkas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="myis" Type="bit" />
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="id1" Type="smallint" />
+  </EntityType>
+</Schema>

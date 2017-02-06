@@ -1,0 +1,75 @@
+﻿@model alan_mvc.nds
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>nds</legend>
+
+    <div class="display-label">name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">c1</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c1)
+    </div>
+
+    <div class="display-label">c2</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c2)
+    </div>
+
+    <div class="display-label">c3</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c3)
+    </div>
+
+    <div class="display-label">c4</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c4)
+    </div>
+
+    <div class="display-label">c5</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c5)
+    </div>
+
+    <div class="display-label">c6</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c6)
+    </div>
+
+    <div class="display-label">c7</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c7)
+    </div>
+
+    <div class="display-label">c8</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c8)
+    </div>
+
+    <div class="display-label">c9</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.c9)
+    </div>
+
+    <div class="display-label">myis</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.myis)
+    </div>
+
+    <div class="display-label">time</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.time)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
